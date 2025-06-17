@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include<stdio.lib>
+#include <stdlib.h>
 
 // Funções 
 float soma(float a, float b);
@@ -13,17 +13,17 @@ int main() {
     char continuar;
     printf("Iniciando à calculadora...\n");
     printf("Seja bem-vindo(a) à calculadora!\n");
-Inicio:
+inicio:
     printf("\nInsira o primeiro número: ");
     scanf("%f", &num1);
     printf("\nSelecione uma operação:\n");
-    printf("A ou a - Adição\n");
-    printf("S ou s - Subtração\n");
-    printf("M ou m - Multiplicação\n");
-    printf("D ou d - Divisão\n");
+    printf("'a' - Adição\n");
+    printf("'s' - Subtração\n");
+    printf("'m' - Multiplicação\n");
+    printf("'d' - Divisão\n(Lembrando que não se deve fazer divisões pelo número 0)\n");
     printf("Você selecionou a operação: ");
     scanf(" %c", &operacao);
-    printf("\Digite o segundo número: ");
+    printf("\nDigite o segundo número: ");
     scanf("%f", &num2);
     if (operacao == 'a') {
         resultado = soma(num1, num2);
@@ -38,7 +38,7 @@ Inicio:
         resultado = divisao(num1, num2);
         printf("\nResultado: %f\n", resultado);
     } else {
-        printf("\nOperação inválida!, Coloque um valor diferente de 0 para esta operação.\n");
+        printf("\nOperação inválida!\n");
     }
     printf("\nDeseja fazer mais cálculos? (Digite 'q' para sair ou qualquer outra tecla para continuar): ");
     scanf(" %c", &continuar);
