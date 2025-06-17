@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+
 
 float soma(float a, float b);
 float subtracao(float a, float b);
@@ -10,7 +10,8 @@ int main() {
     float num1, num2, resultado;
     char operacao;
     char continuar;
-    printf("Bem-vindo(a) à Calculadora!\n");
+    printf("Iniciando à calculadora...\n");
+    printf("Seja bem-vindo(a) à calculadora!\n");
 Inicio:
     printf("\nInsira o primeiro número: ");
     scanf("%f", &num1);
@@ -42,7 +43,7 @@ Inicio:
     scanf(" %c", &continuar);
 
     if (continuar == 'q') {
-        printf("\nSaindo...\n");
+        printf("\nTerminando a execução...\n");
     } else {
         goto inicio;
     }
