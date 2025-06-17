@@ -38,9 +38,9 @@ Inicio:
         resultado = divisao(num1, num2);
         printf("\nResultado: %f\n", resultado);
     } else {
-        printf("\nOperação inválida!, Coloque um valor válido\n");
+        printf("\nOperação inválida!, Coloque um valor diferente de 0 para esta operação.\n");
     }
-    printf("\nDeseja fazer mais um cálculo? (Digite 'q' para sair ou qualquer outra tecla para continuar): ");
+    printf("\nDeseja fazer mais cálculos? (Digite 'q' para sair ou qualquer outra tecla para continuar): ");
     scanf(" %c", &continuar);
 
     if (continuar == 'q') {
