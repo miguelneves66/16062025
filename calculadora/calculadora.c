@@ -17,11 +17,11 @@ Inicio:
     printf("\nInsira o primeiro número: ");
     scanf("%f", &num1);
     printf("\nSelecione uma operação:\n");
-    printf("a - Adição\n");
-    printf("s - Subtração\n");
-    printf("m - Multiplicação\n");
-    printf("d - Divisão\n");
-    printf("Operação: ");
+    printf("A ou a - Adição\n");
+    printf("S ou s - Subtração\n");
+    printf("M ou m - Multiplicação\n");
+    printf("D ou d - Divisão\n");
+    printf("Você selecionou a operação: ");
     scanf(" %c", &operacao);
     printf("\Digite o segundo número: ");
     scanf("%f", &num2);
